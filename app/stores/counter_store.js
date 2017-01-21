@@ -1,6 +1,8 @@
 import {observable} from 'mobx'
+import remotedev from 'mobx-remotedev'
 import api from './api'
 
+@remotedev({remote: true})
 class CounterStore {
   @observable counter = 0;
   @observable remoteCounter = 0;
