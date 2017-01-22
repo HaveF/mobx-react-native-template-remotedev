@@ -1,8 +1,8 @@
-import {observable} from 'mobx'
+import { observable, action, runInAction } from 'mobx'
 import remotedev from 'mobx-remotedev'
 import api from './api'
 
-@remotedev({remote: true})
+@remotedev({remote: true, global: true })
 class CounterStore {
   @observable counter = 0;
   @observable remoteCounter = 0;
@@ -10,25 +10,25 @@ class CounterStore {
   constructor() {
   }
 
-  increment() {
+  @action increment() {
     this.counter++;
   }
 
-  decrement() {
+  @action decrement() {
     this.counter--;
   }
 
-  incrementAsync() {
+  @action incrementAsync() {
     setTimeout(() => {
-      this.counter++;
+      runInAction('Timeout increment', () => { this.count++; }, this);
       }, 500);
   }
 
-  getFromRemote() {
+  @action getFromRemote() {
     api.get('/hello')
       .then( (r)=> {
         if(r.ok)
-          this.remoteCounter = r.data;
+          this.remoteCounter = r.data; //TODO: should use runInAction?
         else
           this.remoteCounter = 'error';
       });
