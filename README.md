@@ -1,7 +1,7 @@
 # example for remotedev
 1. clone the repo
 2. cd to dir, and use yarn to install
-3. react-native upgrade
+3. react-native upgrade, donot replace .babelrc
 4. rnpm link
 5. react-native run-ios
 
