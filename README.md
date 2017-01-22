@@ -1,3 +1,14 @@
+# example for remotedev
+1. clone the repo
+2. cd to dir, and use yarn to install
+3. react-native upgrade
+4. rnpm link
+5. react-native run-ios
+
+
+
+--------
+
 # Mobx React Native Template
 
 It's a nice beginning for a new react native project with mobx architecture from mobx-react-native-template.
