@@ -2,7 +2,7 @@ import { observable, action, runInAction } from 'mobx'
 import remotedev from 'mobx-remotedev'
 import api from './api'
 
-@remotedev({ remote: false, onlyActions: true, global: true })
+@remotedev({ remote: false, onlyActions: true, global: true, hostname: 'localhost', port: 8000 })
 class CounterStore {
   @observable counter       = 0;
   @observable remoteCounter = 0;
