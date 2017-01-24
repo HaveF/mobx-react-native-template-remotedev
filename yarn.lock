@@ -2569,8 +2569,8 @@ remotedev-utils@^0.0.3:
     get-params "^0.1.2"
 
 remotedev@^0.2.2:
-  version "0.2.5"
-  resolved "http://registry.npm.taobao.org/remotedev/download/remotedev-0.2.5.tgz#dded1bdc98fd2fb3bb31bd54342dfbee2ba71376"
+  version "0.2.6"
+  resolved "http://registry.npm.taobao.org/remotedev/download/remotedev-0.2.6.tgz#a53cd102e860e7b7f8c0091433ad6e8229ea488e"
   dependencies:
     jsan "^3.1.3"
     querystring "^0.2.0"
