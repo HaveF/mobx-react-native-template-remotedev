@@ -1,3 +1,7 @@
+# WIP
+try set "remotedev-server" in local
+
+
 # example for remotedev
 1. clone the repo
 2. cd to dir, and use yarn to install
