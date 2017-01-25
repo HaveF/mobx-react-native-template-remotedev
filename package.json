@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "remotedev": "remotedev --hostname=localhost --port=8000 --injectserver=reactnative",
-    "remotedev-revert": "remotedev --revert=reactnative"
+    "remotedev-revert": "remotedev --revert=reactnative",
+    "postinstall": "rndebugger-open"
   },
   "dependencies": {
     "apisauce": "^0.8.0",
@@ -23,6 +24,7 @@
     "babel-preset-react-native": "^1.9.1",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "mobx-remotedev": "^0.2.5",
+    "react-native-debugger-open": "^0.3.2",
     "remotedev-server": "^0.3.0-beta-3"
   }
 }
