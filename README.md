@@ -7,6 +7,16 @@
 5. yarn run remotedev
 6. react-native run-ios
 
+![](https://cloud.githubusercontent.com/assets/7957859/22258148/27672298-e269-11e6-9b33-a793d5e430dc.gif)
+
+The picture is from the author of remotedev -- @zalmoxisus , the warning message is because `react-native-vector-icons` is not linked properly. 
+
+But you can find the remotedev work as expected!
+
+Android is also works! Tested on genymotion. If you can not run, make sure you run cmd `adb reverse tcp:8000 tcp:8000`.
+
+If you like to use more functional debugger, you may try this one:  [jhen0409/react-native-debugger](https://github.com/jhen0409/react-native-debugger). There is also a working example:  [jhen0409/react-native-debugger-mobx-example](https://github.com/jhen0409/react-native-debugger-mobx-example)
+
 --------
 
 # Mobx React Native Template
